@@ -1,4 +1,4 @@
-#!bin/bash#!bin/bash
+#!bin/bash
 
 export BUCKET_NAME = $(gcloud config get-value project)-bucket
 export FILE = img/sign.jpg
