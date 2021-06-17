@@ -2,4 +2,4 @@
 gsutil cp $FILE gs://$BUCKET_NAME/
 
 # set permission to public
-gsutil set -R public-read gs://$BUCKET_NAME/$FILE
+gsutil acl set -R public-read gs://$BUCKET_NAME/$FILE
