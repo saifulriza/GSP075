@@ -1,5 +1,3 @@
-#!bin/bash
-
 export BUCKET_NAME=$(gcloud config get-value project)-bucket
 export FILE=img/sign.jpg
 export API_KEY=$1
@@ -8,10 +6,10 @@ export API_KEY=$1
 chmod +x create_bucket.sh upload_image.sh
 
 # create bucket
-./create_bucket.sh
+bash create_bucket.sh
 
 # upload image
-./upload_image.sh
+bash upload_image.sh
 
 #make ocr req file
 cat << EOF > ocr-request.json
