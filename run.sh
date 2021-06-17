@@ -1,8 +1,8 @@
 #!bin/bash
 
-export BUCKET_NAME = $(gcloud config get-value project)-bucket
-export FILE = img/sign.jpg
-export API_KEY = $1
+export BUCKET_NAME=$(gcloud config get-value project)-bucket
+export FILE=img/sign.jpg
+export API_KEY=$1
 
 
 # create bucket
