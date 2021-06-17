@@ -4,6 +4,8 @@ export BUCKET_NAME=$(gcloud config get-value project)-bucket
 export FILE=img/sign.jpg
 export API_KEY=$1
 
+#set permisson to file
+chmod +x create_bucket.sh upload_image.sh
 
 # create bucket
 ./create_bucket.sh
